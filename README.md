@@ -2,8 +2,8 @@
 
 Golang HX711 interface using periph.io driver
 
-[![GoDoc Reference](https://godoc.org/github.com/MichaelS11/go-hx711?status.svg)](http://godoc.org/github.com/MichaelS11/go-hx711)
-[![Go Report Card](https://goreportcard.com/badge/github.com/MichaelS11/go-hx711)](https://goreportcard.com/report/github.com/MichaelS11/go-hx711)
+[![GoDoc Reference](https://godoc.org/github.com/SimonWaldherr/hx711go?status.svg)](http://godoc.org/github.com/SimonWaldherr/hx711go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/SimonWaldherr/hx711go)](https://goreportcard.com/report/github.com/SimonWaldherr/hx711go)
 
 ## Please note
 
@@ -20,7 +20,7 @@ Side note, in my testing using 3V input had better consistency then using a 5V i
 
 ## Get
 
-`go get github.com/MichaelS11/go-hx711`
+`go get github.com/SimonWaldherr/hx711go`
 
 ## Tags
 
@@ -46,7 +46,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/MichaelS11/go-hx711"
+	"github.com/SimonWaldherr/hx711go"
 )
 
 func main() {
@@ -99,7 +99,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/MichaelS11/go-hx711"
+	"github.com/SimonWaldherr/hx711go"
 )
 
 func main() {
@@ -132,7 +132,7 @@ func main() {
 or
 
 ```
-go build -v -o getAdjustValues github.com/MichaelS11/go-hx711/getAdjustValues
+go build -v -o getAdjustValues github.com/SimonWaldherr/hx711go/getAdjustValues
 ```
 
 ## Simple program to get weight
@@ -146,7 +146,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/MichaelS11/go-hx711"
+	"github.com/SimonWaldherr/hx711go"
 )
 
 func main() {
