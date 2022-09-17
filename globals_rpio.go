@@ -1,5 +1,4 @@
 //go:build gpiomem
-// +build gpiomem
 
 package hx711
 
