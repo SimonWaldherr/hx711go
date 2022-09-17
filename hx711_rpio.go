@@ -1,3 +1,4 @@
+//go:build !windows && gpiomem
 // +build !windows,gpiomem
 
 package hx711
@@ -5,9 +6,10 @@ package hx711
 import (
 	"fmt"
 	"strconv"
+	"strings"
 	"time"
 
-	"github.com/stianeikeland/go-rpio/v4"
+	"github.com/stianeikeland/go-rpio"
 )
 
 // HostInit opens /dev/gpiomem. This needs to be done before Hx711 can be used.
@@ -21,6 +23,9 @@ func HostInit() error {
 // https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf
 // https://godoc.org/github.com/stianeikeland/go-rpio#Pin
 func NewHx711(clockPinName string, dataPinName string) (*Hx711, error) {
+	clockPinName = strings.Replace(clockPinName, "GPIO", "", 1)
+	dataPinName = strings.Replace(dataPinName, "GPIO", "", 1)
+
 	clockPin, err := strconv.ParseInt(clockPinName, 10, 32)
 	if err != nil {
 		return nil, err

@@ -1,8 +1,9 @@
+//go:build !gpiomem
 // +build !gpiomem
 
 package hx711
 
-import "periph.io/x/periph/conn/gpio"
+import "periph.io/x/conn/gpio"
 
 // Hx711 struct to interface with the hx711 chip.
 // Call NewHx711 to create a new one.

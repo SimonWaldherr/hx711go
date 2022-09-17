@@ -1,9 +1,10 @@
+//go:build gpiomem
 // +build gpiomem
 
 package hx711
 
 import (
-	"github.com/stianeikeland/go-rpio/v4"
+	"github.com/stianeikeland/go-rpio"
 )
 
 // Hx711 struct to interface with the hx711 chip.

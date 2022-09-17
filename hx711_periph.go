@@ -1,3 +1,4 @@
+//go:build !windows && !gpiomem
 // +build !windows,!gpiomem
 
 package hx711
@@ -6,9 +7,9 @@ import (
 	"fmt"
 	"time"
 
-	"periph.io/x/periph/conn/gpio"
-	"periph.io/x/periph/conn/gpio/gpioreg"
-	"periph.io/x/periph/host"
+	"periph.io/x/conn/gpio"
+	"periph.io/x/conn/gpio/gpioreg"
+	"periph.io/x/host"
 )
 
 // HostInit calls periph.io host.Init(). This needs to be done before Hx711 can be used.
