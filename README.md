@@ -5,13 +5,20 @@ Golang HX711 interface using periph.io driver
 [![GoDoc Reference](https://godoc.org/github.com/SimonWaldherr/hx711go?status.svg)](http://godoc.org/github.com/SimonWaldherr/hx711go)
 [![Go Report Card](https://goreportcard.com/badge/github.com/SimonWaldherr/hx711go)](https://goreportcard.com/report/github.com/SimonWaldherr/hx711go)
 
+## Get an HX711
+
+you can order a nice hx711 with a load cell directly from amazon: https://amzn.to/3Lls0u6  
+or https://www.bastelgarage.ch/load-cell-amplifier-hx711-wiegesensor-24-bit , 
+https://www.exp-tech.de/sensoren/waegezelle/7507/sparkfun-load-cell-amplifier-hx711 , 
+https://www.sparkfun.com/products/13879  
+
 ## Please note
 
 Please make sure to setup your HX711 correctly. Do a search on the internet to find guide. Here is an example of a guide:
 
 https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide
 
-The examples below are from using a Raspberry Pi 3 with GPIO 6 for clock and GPIO 5 for data. Your setup may be different, if so, your pin names would need to change in each example.
+The examples below are from using a Raspberry Pi 4 with GPIO 6 for clock and GPIO 5 for data. Your setup may be different, if so, your pin names would need to change in each example.
 
 If you need to read from channel B, make sure to call hx711.SetGain(32)
 
