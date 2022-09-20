@@ -1,4 +1,4 @@
-//go:build !windows && gpiomem
+// +build !windows,gpiomem
 
 package hx711
 
